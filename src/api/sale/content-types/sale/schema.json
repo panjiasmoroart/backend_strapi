@@ -11,19 +11,42 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "date": {
-      "type": "datetime"
-    },
-    "total": {
-      "type": "decimal"
+    "invoice_number": {
+      "type": "string",
+      "required": true
     },
     "customer_name": {
+      "type": "string",
+      "required": true
+    },
+    "customer_email": {
       "type": "string"
+    },
+    "customer_phone": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
     },
     "products": {
       "type": "component",
       "component": "shared.sale-item",
       "repeatable": true
+    },
+    "subtotal": {
+      "type": "decimal"
+    },
+    "tax_amount": {
+      "type": "decimal"
+    },
+    "discount_amount": {
+      "type": "decimal"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "notes": {
+      "type": "text"
     }
   }
 }
